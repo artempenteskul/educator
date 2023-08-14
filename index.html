@@ -280,10 +280,10 @@
         </div>
     </section>
 
-    <section class="container testimonials__container">
+    <section class="container testimonials__container mySwiper">
         <h2>Students' Testimonials</h2>
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./images/avatar1.jpg" alt="Avatar">
                 </div>
@@ -300,7 +300,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./images/avatar2.jpg" alt="Avatar">
                 </div>
@@ -317,7 +317,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./images/avatar3.jpg" alt="Avatar">
                 </div>
@@ -334,7 +334,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./images/avatar4.jpg" alt="Avatar">
                 </div>
@@ -351,7 +351,7 @@
                 </div>
             </article>
 
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="./images/avatar5.jpg" alt="Avatar">
                 </div>
@@ -368,10 +368,27 @@
                 </div>
             </article>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
+
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>
