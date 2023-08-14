@@ -501,4 +501,57 @@ footer ul li a:hover {
         background: var(--color-bg2);
         color: var(--color-white);
     }
+
+    /* ===================== HEADER ===================== */
+
+    header {
+        height: 52vh;
+        margin-bottom: 2rem;
+    }
+
+    .header__container {
+        padding-bottom: 4rem;
+        gap: 0;
+    }
+
+    /* ===================== CATEGORIES ===================== */
+
+    .categories {
+        height: fit-content;
+    }
+
+    .categories__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .categories__left {
+        margin-right: 0;
+    }
+
+    /* ===================== COURSES ===================== */
+
+    .courses {
+        margin-top: 0;
+    }
+
+    .courses__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ===================== FAQS ===================== */
+
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq {
+        padding: 1.5rem;
+    }
+
+    /* ===================== FOOTER ===================== */
+
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
