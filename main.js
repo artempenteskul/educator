@@ -1,11 +1,13 @@
 'use strict';
 
+
+// LOGIC FOR NAVBAR BACKGROUND ON SCROLL
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle('nav-window-scroll', window.scrollY > 0)
 })
 
-//
 
+// LOGIC FOR TABS (FAQS)
 const faqs = document.querySelectorAll('.faq')
 faqs.forEach(faq => {
     faq.addEventListener('click', () => {
@@ -21,8 +23,8 @@ faqs.forEach(faq => {
     })
 })
 
-//
 
+// LOGIC FOR BURGER MENU
 const menu = document.querySelector(".nav__menu")
 const openMenuBtn = document.querySelector("#open-menu-btn")
 const closeMenuBtn = document.querySelector("#close-menu-btn")
