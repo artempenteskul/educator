@@ -4,8 +4,8 @@
     background: var(--color-bg1);
     padding: 4rem;
     display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 8rem;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
     height: 30rem;
     margin: 9rem auto;
     border-radius: 1rem;
@@ -67,11 +67,11 @@
 
 /* ===================== CONTACT FORM ===================== */
 
-form {
+.contact__form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    margin-right: 8rem;
+    margin-right: 4rem;
 }
 
 .form__name {
@@ -86,8 +86,49 @@ input, textarea{
     color: var(--color-white);
 }
 
-form button {
+.contact__form button {
     width: max-content;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+
+/* ===================== MEDIA QUERIES (TABLET) ===================== */
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        padding-bottom: 0;
+    }
+
+    .contact__container {
+        gap: 1.5rem;
+        margin-top: 6rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .contact__aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .contact__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+}
+
+
+/* ===================== MEDIA QUERIES (MOBILE) ===================== */
+
+@media screen and (max-width: 600px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .form__name {
+        flex-direction: column;
+    }
 }
