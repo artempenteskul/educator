@@ -86,6 +86,10 @@ input, textarea{
     color: var(--color-white);
 }
 
+textarea {
+    resize: none;
+}
+
 .contact__form button {
     width: max-content;
     cursor: pointer;
