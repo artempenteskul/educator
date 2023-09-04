@@ -41,7 +41,7 @@ body {
 }
 
 section {
-    padding: 6rem 0; /* 1 rem = 16px */
+    padding: 6rem 0;
 }
 
 section h2 {
@@ -347,22 +347,9 @@ header {
 .testimonial__body {
     background: var(--color-primary);
     padding: 2rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     position: relative;
 }
-
-.testimonial__body::before {
-    content: "";
-    display: block;
-    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
-    width: 3rem;
-    height: 3rem;
-    position: absolute;
-    left: 50%;
-    top: -1.5rem;
-    transform: rotate(45deg);
-}
-
 
 /* ===================== FOOTER ===================== */
 
