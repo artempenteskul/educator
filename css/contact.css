@@ -126,7 +126,7 @@ textarea {
 
 /* ===================== MEDIA QUERIES (MOBILE) ===================== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
     .contact__container {
         grid-template-columns: 1fr;
         gap: 3rem;
